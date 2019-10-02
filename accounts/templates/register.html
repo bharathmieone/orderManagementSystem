@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% url_for 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css '%}">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+    <form class="form-control" action="register" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="full_name" placeholder="Full Name"><br>
+        <input type="text" name="username" placeholder="User Name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="text" name="password1" placeholder="Password"><br>
+        <input type="text" name="password2" placeholder="Confirm Password"><br>
+        <input type="submit" >
+    </form>
+    </div>
+</body>
+</html>
