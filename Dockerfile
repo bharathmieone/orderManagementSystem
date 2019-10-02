@@ -1,2 +1,9 @@
-FROM busybox
-CMD echo "Hello world! This is my first Docker image."
+FROM python:3.7
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /code
+WORKDIR /code
+COPY requirements.txt /code/
+RUN pip install -r requirements.txt
+COPY . /code/
+
+# sudo docker-compose run web /usr/local/bin/python3 manage.py createsuperuser
