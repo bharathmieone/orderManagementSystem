@@ -29,5 +29,6 @@ urlpatterns = [
     path('', include('products.urls')),
     path('accounts/', include('accounts.urls')),
     path('accounts/login/', admin.site.urls),
+    path('api/paytm/', include('drf_paytm.urls')),
 
 ]

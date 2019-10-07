@@ -1,2 +1,8 @@
 Django>=2.0,<3.0
 psycopg2>=2.7,<3.0
+drf_paytm
+django-chartjs
+django-jchart
+djangorestframework
+gunicorn
+django-heroku
