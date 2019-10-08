@@ -4,4 +4,6 @@
 
 2. python manage.py migrate
 
-3. sudo docker-compose up
+3. python manage.py createsuperuser
+
+4. sudo docker-compose up
